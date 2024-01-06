@@ -1,5 +1,16 @@
 # Spotify Clone - Astro, React JS, Svelte y TailwindCSS
 
+## 📚 Description
+
+This repository holds a clone of the popular Spotify music service built using Astro, a modern front-end site generator that provides incredibly fast performance. This project has been carried out to learn how modern web applications are built using Astro.
+
+## ✨ Features
+
+- User interface similar to Spotify.
+- Music playback functionality.
+- Search, playlists, and user profile features.
+- Responsive design adaptable to different devices.
+
 ## 🚀 Project Structure
 
 Inside of this Astro project, you'll see the following folders and files:
@@ -7,10 +18,13 @@ Inside of this Astro project, you'll see the following folders and files:
 ```text
 /
 ├── public/
+│   ├── fonts/
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── AsideMenu.astro
+│   │   ├── AsideMenu.astro
+│   │   └── SideMenuItem.astro
+│   ├── icons/
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
