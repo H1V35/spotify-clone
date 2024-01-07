@@ -19,6 +19,7 @@ Inside of this Astro project, you'll see the following folders and files:
 /
 ├── public/
 │   ├── fonts/
+│   ├── music/
 │   └── favicon.svg
 ├── src/
 │   ├── components/
@@ -27,6 +28,9 @@ Inside of this Astro project, you'll see the following folders and files:
 │   ├── icons/
 │   ├── layouts/
 │   │   └── Layout.astro
+│   ├── lib/
+│   │   ├── colors.ts
+│   │   └── data.ts
 │   └── pages/
 │       └── index.astro
 └── package.json
