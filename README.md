@@ -24,6 +24,8 @@ Inside of this Astro project, you'll see the following folders and files:
 ├── src/
 │   ├── components/
 │   │   ├── AsideMenu.astro
+│   │   ├── PlaylistItemCard.astro
+│   │   ├── SideMenuCard.astro
 │   │   └── SideMenuItem.astro
 │   ├── icons/
 │   ├── layouts/
