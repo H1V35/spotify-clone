@@ -34,6 +34,8 @@ Inside of this Astro project, you'll see the following folders and files:
 │   │   ├── colors.ts
 │   │   └── data.ts
 │   └── pages/
+│       ├── playlist/
+│       │   └── [id].astro
 │       └── index.astro
 └── package.json
 ```
