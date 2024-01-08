@@ -1,4 +1,4 @@
-# Spotify Clone - Astro, React JS, Svelte y TailwindCSS
+# Spotify Clone - Astro, React JS y TailwindCSS
 
 ## 📚 Description
 
@@ -24,6 +24,7 @@ Inside of this Astro project, you'll see the following folders and files:
 ├── src/
 │   ├── components/
 │   │   ├── AsideMenu.astro
+│   │   ├── Greeting.tsx
 │   │   ├── PlaylistItemCard.astro
 │   │   ├── SideMenuCard.astro
 │   │   └── SideMenuItem.astro
