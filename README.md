@@ -24,6 +24,7 @@ Inside of this Astro project, you'll see the following folders and files:
 ├── src/
 │   ├── components/
 │   │   ├── AsideMenu.astro
+│   │   ├── CardPlayButton.jsx
 │   │   ├── Greeting.tsx
 │   │   ├── Player.jsx
 │   │   ├── PlaylistItemCard.astro
