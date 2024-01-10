@@ -29,7 +29,8 @@ Inside of this Astro project, you'll see the following folders and files:
 │   │   ├── Player.jsx
 │   │   ├── PlaylistItemCard.astro
 │   │   ├── SideMenuCard.astro
-│   │   └── SideMenuItem.astro
+│   │   ├── SideMenuItem.astro
+│   │   └── Slider.tsx
 │   ├── icons/
 │   ├── layouts/
 │   │   └── Layout.astro
