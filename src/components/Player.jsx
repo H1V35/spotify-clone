@@ -25,6 +25,27 @@ export const Play = ({ className }) => (
   </svg>
 );
 
+const CurrentSong = ({ image, title, artists }) => {
+  return (
+    <div className="flex items-center gap-4 relative overflow-hidden">
+      <picture className="w-16 h-16 bg-zinc-800 rounded-md shadow-lg overflow-hidden">
+        <img src={image} alt={title} />
+      </picture>
+
+      <div className="flex flex-col gap-1">
+        <h3
+          className={`font-semibold text-sm block 
+          ${title ? '' : 'bg-zinc-800 rounded-md w-24 h-4'}`}>
+          {title}
+        </h3>
+        <span className={`text-xs ${title ? 'opacity-80' : 'bg-zinc-800 rounded-md w-24 h-3'}`}>
+          {artists?.join(', ')}
+        </span>
+      </div>
+    </div>
+  );
+};
+
 export function Player() {
   const { currentMusic, isPlaying, setIsPlaying } = usePlayerStore(state => state);
   const audioRef = useRef();
@@ -47,12 +68,17 @@ export function Player() {
   };
 
   return (
-    <div className="flex flex-row justify-between w-full px-4 z-50">
-      <div>CurrentSong...</div>
+    <div className="flex flex-row justify-between items-center w-full px-4 z-50">
+      <div>
+        <CurrentSong {...currentMusic.song} />
+      </div>
 
       <div className="grid place-content-center gap-4 flex-1">
         <div className="flex justify-center">
-          <button className="bg-white rounded-full p-2" onClick={handleClick}>
+          <button
+            className={`rounded-full p-2 
+            ${currentMusic.song ? 'bg-white' : 'bg-zinc-800 pointer-events-none'}`}
+            onClick={handleClick}>
             {isPlaying ? <Pause /> : <Play />}
           </button>
         </div>
