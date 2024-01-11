@@ -30,7 +30,8 @@ Inside of this Astro project, you'll see the following folders and files:
 │   │   ├── PlaylistItemCard.astro
 │   │   ├── SideMenuCard.astro
 │   │   ├── SideMenuItem.astro
-│   │   └── Slider.tsx
+│   │   ├── Slider.tsx
+│   │   └── SongsTable.astro
 │   ├── icons/
 │   ├── layouts/
 │   │   └── Layout.astro

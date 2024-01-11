@@ -1,4 +1,5 @@
 ---
+import SongsTable from '@/components/SongsTable.astro';
 import Layout from '../../layouts/Layout.astro';
 
 import { allPlaylists, songs } from '@/lib/data';
@@ -21,7 +22,7 @@ const playlistSongs = songs.filter(song => song.albumId === playlist?.albumId);
         <img
           src={playlist?.cover}
           alt={`Cover of ${playlist?.title}`}
-          class="object-cover w-full h-full shadow-lg"
+          class="object-cover w-full h-full rounded-sm shadow-lg"
           transition:name=`playlist ${playlist?.id} image`
         />
       </picture>
@@ -51,7 +52,9 @@ const playlistSongs = songs.filter(song => song.albumId === playlist?.albumId);
     <div class="relative z-10 px-6 pt-10"></div>
 
     <div class="absolute -z-10 inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80"></div>
+
+    <section class="p-6">
+      <SongsTable songs={playlistSongs} />
+    </section>
   </div>
 </Layout>
-
-<style></style>
